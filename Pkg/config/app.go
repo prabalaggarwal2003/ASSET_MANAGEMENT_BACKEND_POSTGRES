@@ -12,7 +12,7 @@ var (
 
 func Connect() {
 
-	d, err := gorm.Open("postgres", "host=localhost port=5432 dbname=issue user=postgres password=<your_db_password> connect_timeout=10 sslmode=disable")
+	d, err := gorm.Open("postgres", "postgresql://management_erp:nq6-jRS0qHZIA6GuKuZWxQ@zinc-ogress-7322.6xw.aws-ap-southeast-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full")
 	if err != nil {
 		panic(err)
 	}
